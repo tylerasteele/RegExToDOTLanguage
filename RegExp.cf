@@ -1,0 +1,7 @@
+REmpty.    RegExp  ::=  "" ;
+RUnion.    RegExp  ::= RegExp  "|" RegExp1 ;
+RSequence. RegExp1 ::= RegExp1 " " RegExp2 ;
+RClosure.  RegExp2 ::= RegExp2 "*" ;
+RSymbol.   RegExp3 ::= Ident  ;   
+
+coercions RegExp 3 ;
